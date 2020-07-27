@@ -1,0 +1,18 @@
+<Xdmf Version="3.0">
+  <Domain>
+    <Grid Name="Grid">
+      <Geometry GeometryType="XYZ">
+        <DataItem DataType="Float" Dimensions="140693 3" Format="HDF" Precision="8">2D_anubis105_140K.h5:/data0</DataItem>
+      </Geometry>
+      <Topology NumberOfElements="280207" TopologyType="Triangle">
+        <DataItem DataType="Int" Dimensions="280207 3" Format="HDF" Precision="4">2D_anubis105_140K.h5:/data1</DataItem>
+      </Topology>
+      <Attribute AttributeType="Scalar" Center="Node" Name="point_tags">
+        <DataItem DataType="Int" Dimensions="140693" Format="HDF" Precision="4">2D_anubis105_140K.h5:/data2</DataItem>
+      </Attribute>
+      <Attribute AttributeType="Scalar" Center="Cell" Name="cell_tags">
+        <DataItem DataType="Int" Dimensions="280207" Format="HDF" Precision="4">2D_anubis105_140K.h5:/data3</DataItem>
+      </Attribute>
+    </Grid>
+  </Domain>
+</Xdmf>

@@ -24,24 +24,24 @@ print("Simulation starting time : ", start_time)
 # Import geometry, mesh and materials properties
 
 # Complex mesh .xmdf
-geometry_folder = "geometry/2D Jackal/140K/"
-geometry_filename ="2D_jackal140K"
+geometry_folder = "geometry/2D_105nm/"
+geometry_filename ="2D_anubis105_140K"
 geometry_fileformat = ".xdmf"
 mesh = Mesh()
 with XDMFFile(geometry_folder + geometry_filename + geometry_fileformat) as file:
     file.read(mesh)
 
 # C_ijkl for each part of the  (simulated data)
-filename_bulk = 'InP_stiffness_tensor_simu_rot.npy'
-filename_epi = 'InAs35P65_stiffness_tensor_simu_rot.npy'
-filename_cap = 'InP_stiffness_tensor_simu_rot.npy'
+filename_bulk = 'InP_stiffness_tensor_simu_exp.npy'
+filename_epi = 'InAs35P65_stiffness_tensor_simu_exp.npy'
+filename_cap = 'InP_stiffness_tensor_simu_exp.npy'
 materials_bulk = np.load(filename_bulk)
 materials_epi = np.load(filename_epi)
 materials_cap = np.load(filename_cap)
 
 # Atomic misfit at equilibrium (simulated data)
 m_bulk = 0
-m_epi = 0.01303370319
+m_epi = 0.01118101586
 m_cap = 0
 
 # Define domains, boudaries from the mesh domain (Geometry specific)
