@@ -32,9 +32,9 @@ with XDMFFile(geometry_folder + geometry_filename + geometry_fileformat) as file
     file.read(mesh)
 
 # C_ijkl for each part of the  (simulated data)
-filename_bulk = 'InP_stiffness_tensor_simu_exp.npy'
-filename_epi = 'InAs35P65_stiffness_tensor_simu_exp.npy'
-filename_cap = 'InP_stiffness_tensor_simu_exp.npy'
+filename_bulk = 'InP_stiffness_tensor_exp_rot.npy'
+filename_epi = 'InAs35P65_stiffness_tensor_exp_rot.npy'
+filename_cap = 'InP_stiffness_tensor_exp_rot.npy'
 materials_bulk = np.load(filename_bulk)
 materials_epi = np.load(filename_epi)
 materials_cap = np.load(filename_cap)
